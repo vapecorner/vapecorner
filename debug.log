@@ -1,0 +1,12 @@
+[0410/222359.114:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0410/222359.115:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[0410/222359.117:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0410/222359.117:ERROR:exception_snapshot_win.cc(88)] thread ID 7660 not found in process
+[0410/222359.117:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0410/222359.117:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+[0410/222653.458:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0410/222653.458:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[0410/222653.460:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
+[0410/222653.463:ERROR:exception_snapshot_win.cc(88)] thread ID 12952 not found in process
+[0410/222653.463:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
+[0410/222653.463:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

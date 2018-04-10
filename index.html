@@ -1,105 +1,133 @@
 <!DOCTYPE html>
 
-<html lang=en>
+<html lang="ru">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="resources/css/queriess.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <title>VapeCorner</title>
     </head>
     
     <body>
-        <header>
+        <header id="start">
 			<nav>
 				<div class="row">
-					<a href="index.html"><img src="resources/img/logo-white.png" alt="VapeCorner logo" class="logo"></a>
-					<ul class="main-nav">
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Delivery</a></li>
-						<li><a href="#">Wholesale</a></li>
-						<li><a href="#">Contacts</a></li>
+					<a href="#start"><img src="resources/img/logo-white.png" alt="VapeCorner logo" class="logo"></a>
+					<a href="#start"><img src="resources/img/logo-black.png" alt="VapeCorner logo" class="logo-black"></a>
+					<ul class="main-nav js--main-nav">
+						<li><a href="#Latvian">Latviski</a></li>
+						<li><a href="#about-us">О нас</a></li>
+						<li><a href="#wholesale">Спец.Предложения</a></li>
+						<li><a href="#contacts">Задай вопрос</a></li>
 					</ul>
+                    <a class="mobile-nav-icon js--mobile-nav"><i class="ion-compass"></i></a>
 				</div>
 			</nav>
             <div class="hero-text-box">
-                <h1>Super tasty e-liquids for low prices</h1>
-                <a class="btn btn-full" href="shop.html">Watch shop</a>
-                <a class="btn btn-ghost" href="#">Sign Up</a>
+                <h1>Божественные жидкости за копейки</h1>
+                <a class="btn btn-full js--scroll-to-showcase" href="#">Осмотреть меню</a>
+                <a class="btn btn-ghost js--scroll-to-signup" href="#">Заказать</a>
             </div>
         </header>
 		
-
+        
 		<!-- FEATUERES SECTION -->
-		<section class="section-features">
+		<section class="section-features js--section-features" id="about-us">
 			<div class="row">
-				<h2>Some pros about our company</h2>
+				<h2>Почему стоит покупать у нас?</h2>
 				<p class="long-copy">
-					Welcome to VapeCorner! Best webshop with best prices and with best e-liquids! And blah-blah great stuff.
+                    Добро пожаловать на сайт-визитку VapeCorner. Мы предлагаем отменные жидкости, сделанные по лучшим рецептам. Самое вовремя попробовать что-то хорошое. Не так ли?
 				</p>
 			</div>
 
-			<div class="row">
+			<div class="row js--wp-about-us">
 				<div class="col span-1-of-4 box">
 					<i class="ion-waterdrop icon-big"></i>
-					<h3>Great e-liquids</h3>
+					<h3>Отменные жидкости</h3>
 					<p>
-						We offer top brands and tastes for you to explore! Creamy taste of Suicide Bunny, fruity juice of VGOD, Space Jump and...  A LOT more in our web shop!
+                        Мы предлагаем необычеые вкусы, которые точно Вас заинтересуют. Крем, фрукты, капучино. 
 					</p>
 				</div>
 
 				<div class="col span-1-of-4 box">
 					<i class="ion-clock icon-big"></i>
-					<h3>We work 24/7</h3>
+					<h3>Мы работаем круглосуточно</h3>
 					<p>
-						We do know how it frustrating when you all out of juice and it's sunday. So we offer a 24/7 service for our customers.
+						Обидно когда жидкость закончилась именно тогда, когда её уже нигде не купишь. Но мы предлагаем круглосуточный формат работы - поэтому дымите 24/7
 					</p>
 				</div>
 
 				<div class="col span-1-of-4 box">
 					<i class="ion-flash icon-big"></i>
-					<h3>Fast response</h3>
+					<h3>Быстрое обслуживание</h3>
 					<p>
-						We are always on the line. If you have questions - feel free to contact us. We will response in no time!
+						Мы всегда на связи и готовы помочь Вам с любыми вопросами! Как по почте, так и по телефону.
 					</p>
 				</div>
 
 				<div class="col span-1-of-4 box">
 					<i class="ion-briefcase icon-big"></i>
-					<h3>Loyalty discounts</h3>
+					<h3>Скидки лучшим клиентам</h3>
 					<p>
-						Everyone likes a good discount. Especially if it's earned. Buy more - pay less.
+					   Мы уважаем наших клиентов и боимся их потерять! Поэтому мы любим делать скидки для лучших покупаетелей! 
 					</p>
 				</div>
 			</div>
 		</section>
 		
 		<!-- PHOTOS SECTION !TODO! WITH SHOP IMPLEMENTATION -->
-		<section class="section-liquids">
+		<section class="section-liquids js--liquids-showcase" id="wholesale">
 			<ul class="liquids-showcase clearfix">
 				<li>
-					<figure class="liquid-photo">
-						<img src="resources/img/hot_girl_vape_1920.jpg" alt="">
+					<figure class="liquid-photo accordion">
+						<div>
+                            <img class="accordion" src="resources/img/hot_girl_vape_1920.jpg" alt="">
+                            <div id="foo" class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
 					</figure>
 				</li>
                 <li>
-					<figure class="liquid-photo">
-                        <img src="resources/img/eat_sleep_vape_reapeat.jpg" alt="eat sleep vape repeat">
-					</figure>
+					<figure class="liquid-photo accordion">
+                        <div>
+                            <img class="accordion" src="resources/img/hot_girl_vape_1920.jpg" alt="">
+                            <div id="foo" class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </figure>
 				</li>
                 <li>
-					<figure class="liquid-photo">
-                        <img src="resources/img/vape_like_a_sir_1920.jpg" alt="guy vapes">
-					</figure>
+					<figure class="liquid-photo accordion">
+                        <div>
+                            <img class="accordion" src="resources/img/hot_girl_vape_1920.jpg" alt="">
+                            <div id="foo" class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </figure>
 				</li>
                 <li>
-					<figure class="liquid-photo">
-                        <img src="resources/img/vape_into_space.jpg" alt="skull with vape">
-					</figure>
+					<figure class="liquid-photo accordion">
+                        <div>
+                            <img class="accordion" src="resources/img/hot_girl_vape_1920.jpg" alt="">
+                            <div id="foo" class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </figure>
 				</li>
 			</ul>
-
+            <!--
             <ul class="liquids-showcase clearfix">
 				<li>
 					<figure class="liquid-photo">
@@ -122,14 +150,15 @@
 					</figure>
 				</li>
 			</ul>
+            -->
 		</section>
 
-        <section class="section-contacts">
+        <section class="section-contacts js--section-signup">
             <div class="row">
                 <h2>Our contacts</h2>
             </div>
             <div class="row">
-                <form method="post"action="#" class="contact-form">
+                <form method="post" action="#" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3 div-contact-us">
                             <label>Name</label>
@@ -148,12 +177,12 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3 div-contact-us">
-                            <label>How did you find us?</label>
+                            <label>Как Вы о нас узнали?</label>
                         </div>
                         <div class="col span-2-of-3 div-contact-us">
                             <select name="find-us" id="find-us">
-                                <option value="1" selected>Social networks</option>
-                                <option value="2">Search engine</option>
+                                <option value="1" selected>Социальные сети</option>
+                                <option value="2">Поисковая система Google</option>
                                 <option value="3">Friends</option>
                                 <option value="4">Other</option>
                             </select>
@@ -161,33 +190,61 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3 div-contact-us">
-                            <label>Inform about special deals?</label>
+                            <label>Получать рассылку о спец.предложениях?</label>
                         </div>
                         <div class="col span-2-of-3 div-contact-us">
-                            <input type="checkbox" name="deals" id="deals" checked> Yes, please!
+                            <input type="checkbox" name="deals" id="deals" checked> Да, конечно
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3 div-contact-us">
-                            <label>Please, describe your question</label>
+                            <label>Описание вопроса</label>
                         </div>
                         <div class="col span-2-of-3 div-contact-us">
-                            <textarea name="user-question" placeholder="Type your question here" required></textarea>
+                            <textarea name="user-question" placeholder="Место для вопроса" required></textarea>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col span-1-of-3 div-contact-us">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3 div-contact-us">
-                            <input type="submit" value="Send question">
+                        <div class="div-contact-us-input">
+                            <input type="submit" value="Отправить">
                         </div>
                     </div>
                 </form>
             </div>
         </section>
-
-
-
+        
+        <footer id="contacts">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#about-us">О нас</a></li>
+						<li><a href="#delivery">Доставка</a></li>
+						<li><a href="#wholesale">Спец.Предложения</a></li>
+						<li><a href="#contacts">Задай вопрос</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <p>Copyright &copy; 2016 by VapeCorner. All rights reserved.</p>
+                </div>
+            </div>
+            
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
+        
     </body>
+    
 </html>
